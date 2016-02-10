@@ -1,0 +1,16 @@
+day4php:
+  image: php
+  volumes:
+    - "./day4/php:/source/day4/php"
+  working_dir: "/source/day4/php"
+  entrypoint: "/usr/local/bin/php"
+  command: ["app.php"]
+  mem_limit: 256M
+day5js:
+  build: day5/js
+  volumes:
+    - "./day5/js:/source/day5/js"
+  working_dir: "/source/day5/js"
+  entrypoint: "node"
+  command: ["app.js"]
+  mem_limit: 256M
